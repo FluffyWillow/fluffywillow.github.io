@@ -1,3 +1,56 @@
+/* COLORS 
+MAIN #1b2223 
+SECONDARY #3a4f50 
+ACCENT #0ef6cc
+FONT #f4fefd
+*/
+
 * {
     font-family: 'DM Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* border: 1px solid green; */
+    color: #f4fefd;
+}
+
+body {
+    background-color: #1b2223;
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vh - 10vh);
+}
+
+nav {
+    display: flex;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5vw;
+}
+
+.main-content {
+    width: 65vw;
+}
+
+.side-bar {
+    width: 25vw;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
