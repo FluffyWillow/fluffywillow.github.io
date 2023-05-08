@@ -67,6 +67,10 @@ nav {
     width: 65vw;
 }
 
+.main-content h2 {
+    margin: 1vh;
+}
+
 
 /* SIDE */
 .side-bar {
@@ -75,6 +79,57 @@ nav {
 
 .side-bar h2 {
     margin: 1vh;
+}
+
+.languages,
+.contact {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    transition: all .5s ease-in-out;
+    border-radius: 1vh;
+    padding: 1vh;
+}
+
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-desc {
+    background-color: #1b2223;
+    margin: 1vh;
+    padding: .2vh;
+    width: 60%;
+    height: 5vh;
+    display: flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+    border-radius: 1vh;
+    cursor: default;
+}
+
+#email-icon {
+    border-radius: 1vh;
+    margin: 1vh;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lang-container {
@@ -133,18 +188,16 @@ footer {
 
 /* HOVERS */
 
-.main-content:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 0px 10px #0ef6cc6d;
-}
-
-.side-bar:hover {
+.main-content:hover,
+.languages:hover,
+.contact:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 10px #0ef6cc6d;
 }
 
 .lang-desc:hover,
-.prog-lang:hover {
+.prog-lang:hover,
+.contact-desc:hover {
     opacity: 1;
     transform: scale(1.5);
     box-shadow: 0px 0px 10px #0ef6cc6d;
