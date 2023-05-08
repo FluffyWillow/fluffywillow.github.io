@@ -71,7 +71,10 @@ nav {
 /* SIDE */
 .side-bar {
     width: 25vw;
+}
 
+.side-bar h2 {
+    margin: 1vh;
 }
 
 .lang-container {
