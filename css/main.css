@@ -94,6 +94,13 @@ nav {
     padding: 1vh;
 }
 
+.languages h2,
+nav h2,
+.contact h2,
+.main-content h2 {
+    font-size: 2vw;
+}
+
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 .email {
@@ -122,15 +129,16 @@ nav {
     cursor: default;
 }
 
+.contact-desc h4 {
+    font-size: .8vw;
+}
+
 #email-icon {
-    border-radius: 1vh;
     margin: 1vh;
-    width: 10vh;
-    height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
 
 .lang-container {
     display: flex;
@@ -138,13 +146,14 @@ nav {
     justify-content: center;
     align-items: center;
     transition: all .5s ease-in-out;
+    width: 23vw;
 }
 
 .lang-desc {
     background-color: #1b2223b6;
     margin: 1vh;
     padding: .2vh;
-    width: 5vh;
+    width: 5vw;
     height: 5vh;
     display: flex;
     white-space: nowrap;
@@ -160,10 +169,14 @@ nav {
     cursor: default;
 }
 
+/* .lang-desc h6 {
+    font-size: .6vw;
+} */
+
 #prog-lang {
     margin: 1vh;
     padding: .2vh;
-    width: 5vh;
+    width: 5vw;
     height: 5vh;
     display: flex;
     justify-content: center;
